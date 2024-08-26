@@ -2,41 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css" class="css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Four card feature section</title>
 </head>
 
 <body>
   <header>
-    <h1>Reliable, efficient delivery</h1>
-    <h2>Powered by Technology</h2>
-    <p>Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+    <h1 class="headingText">Reliable, efficient delivery</h1>
+    <h2 class="boldText">Powered by Technology</h2>
+    <p class="subText">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
   </header>
 
   <main>
     <section>
-      <div>
-        Supervisor
-        Monitors activity to identify project roadblocks
-      </div>
-      
-      <div>
-        Team Builder
-        Scans our talent network to create the optimal team for your project
-      </div>
-      
-      <div>
-        Karma
-        Regularly evaluates our talent to ensure quality
-      </div>
-      
-      <div>
-        Calculator
-        Uses data from past projects to provide better delivery estimates
+      <div class="cardContainer">
+        <div class="cardOne">
+          <p class="cardHeading">Supervisor</p>
+          <p class="cardSubtext">Monitors activity to identify project roadblocks</p>
+        </div>
+        
+        <div class="cardTwo">
+          <p class="cardHeading">Team Builder</p>
+          <p class="cardSubtext">Scans our talent network to create the optimal team for your project</p>
+        </div>
+        
+        <div class="cardThree">
+          <p class="cardHeading">Karma</p>
+          <p class="cardSubtext">Regularly evaluates our talent to ensure quality</p>
+        </div>
+        
+        <div class="cardFour">
+          <p class="cardHeading">Calculator</p>
+          <p class="cardSubtext">Uses data from past projects to provide better delivery estimates</p>
+        </div>
       </div>
     </section>
   </main>
