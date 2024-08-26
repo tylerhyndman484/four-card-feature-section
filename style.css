@@ -1,3 +1,50 @@
+:root {
+--box-two-top-border: hsl(0, 78%, 62%);
+--box-one-top-border: hsl(180, 62%, 55%);
+--box-three-top-border: hsl(34, 97%, 64%);
+--box-four-top-border: hsl(212, 86%, 64%);
+
+--clr-accent-400: hsl(234, 12%, 34%);
+--clr-accent-500: hsl(229, 6%, 66%);
+--clr-accent-300: hsl(0, 0%, 98%);
+
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+ 
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
 
 
 
