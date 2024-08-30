@@ -60,14 +60,19 @@
 body {
     font-family: 'Poppins';
     font-size: .9375rem;
+    background-color: var(--clr-accent-300);
 }
+
 
 .headingText {
     font-weight: var(--fw-light);
+    font-size: 1.5rem;
 }
 
 .boldText {
     font-weight: var(--fw-bold);
+    font-size: 1.5rem;
+    opacity: .7;
 }
 
 .subText {
@@ -77,6 +82,7 @@ body {
 
 .cardHeading {
     font-weight: var(--fw-bold);
+    opacity: .7;
 }
 
 .cardSubtext {
@@ -84,8 +90,69 @@ body {
     font-size: .8125rem;
 }
 
+/* Layout Styling */
 
+body {
+  padding-inline: 2.5rem;
+}
 
+header {
+  text-align: center;
+}
+
+.headingText {
+  margin-top: 2.75rem;
+}
+
+.boldText {
+  padding-bottom: .75rem;
+}
+
+.subText {
+  padding-bottom: 4rem;
+}
+
+.cardContainer {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem 1rem 1.5rem 1.5rem;
+  display: grid;
+  border-radius: .5rem;
+  box-shadow: 0px 15px 25px rgb(225, 225, 225);
+}
+
+.cardOne {
+  border-top: solid 3px var(--box-one-top-border);
+}
+
+.cardTwo {
+  border-top: solid 3px var(--box-two-top-border);
+}
+
+.cardThree {
+  border-top: solid 3px var(--box-three-top-border);
+}
+
+.cardFour {
+  border-top: solid 3px var(--box-four-top-border);
+}
+
+.cardHeading {
+  padding-bottom: .3rem;
+}
+
+.cardSubtext {
+  padding-bottom: 2rem;
+}
+
+.cardContainer img {
+  width: 2.5rem;
+  justify-self: end;
+}
 
 
 
