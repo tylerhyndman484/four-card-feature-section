@@ -130,12 +130,13 @@ header {
 
 @media screen and (min-width: 650px) {
   .cardContainer {
-    gap: 0rem;
+    margin: auto;
+    max-width: 900px;
+    gap: 1.5rem;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
       "Supervisor Team Calculator"
-      ". Karma .";
+      "Supervisor Karma Calculator";
   }
   
 
@@ -162,7 +163,10 @@ header {
   background-color: white;
   padding: 1rem 1rem 1.5rem 1.5rem;
   display: grid;
-  border-radius: .5rem;
+  border-top-left-radius: .2rem;
+  border-top-right-radius: .2rem;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
   box-shadow: 0px 15px 25px rgb(225, 225, 225);
   max-width: 20rem;
 }
