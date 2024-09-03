@@ -77,20 +77,14 @@ body {
 
   @media screen and (min-width: 800px) {
     .headingText , .boldText {
-      font-size: 1.65rem;
+      font-size: 2rem;
     }
   }
 
 .subText {
     font-weight: var(--fw-normal);
     opacity: .4;
-    font-size: .9rem;
-}
-
-@media screen and (min-width: 800px) {
-  .subText {
-    font-size: .7rem;
-  }
+    font-size: .85rem;
 }
 
 .cardHeading {
@@ -100,7 +94,7 @@ body {
 
 .cardSubtext {
     opacity: .4;
-    font-size: .6rem;
+    font-size: .7rem;
     line-height: 1.1rem;
 }
 
@@ -108,12 +102,15 @@ body {
 
 body {
   padding-inline: 2.5rem;
-  display: grid;
+  /* display: grid; */
   /* place-items: center; */
 }
 
 header {
   text-align: center;
+  margin: auto;
+  display: block;
+  margin-bottom: 5rem;
 }
 
 .headingText {
@@ -127,7 +124,8 @@ header {
 .subText {
   text-align: center;
   padding-bottom: 4rem;
-  max-width: 25rem;
+  /* padding-inline: .2rem; */
+  max-width: 30rem;
   margin: auto;
 }
 
