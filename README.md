@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/Four-Card-Feature-Screenshot.png)
+![](/Four-Feature-Card-Screenshot.png)
 
 ### Links
 
