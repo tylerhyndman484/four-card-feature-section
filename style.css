@@ -75,15 +75,22 @@ body {
     opacity: .7;
 }
 
-@media screen and (min-width: 650px) {
-  .headingText , .boldText {
-    font-size: 2rem;
+  @media screen and (min-width: 800px) {
+    .headingText , .boldText {
+      font-size: 1.65rem;
+    }
   }
-}
 
 .subText {
     font-weight: var(--fw-normal);
     opacity: .4;
+    font-size: .9rem;
+}
+
+@media screen and (min-width: 800px) {
+  .subText {
+    font-size: .7rem;
+  }
 }
 
 .cardHeading {
@@ -93,13 +100,16 @@ body {
 
 .cardSubtext {
     opacity: .4;
-    font-size: .7rem;
+    font-size: .6rem;
+    line-height: 1.1rem;
 }
 
 /* Layout Styling */
 
 body {
   padding-inline: 2.5rem;
+  display: grid;
+  /* place-items: center; */
 }
 
 header {
@@ -117,8 +127,14 @@ header {
 .subText {
   text-align: center;
   padding-bottom: 4rem;
-  max-width: 32rem;
+  max-width: 25rem;
   margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .subText {
+    padding-bottom: 0rem;
+  }
 }
 
 .cardContainer {
@@ -127,10 +143,11 @@ header {
   place-items: center;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 800px) {
   .cardContainer {
-    margin: auto;
-    max-width: 900px;
+    margin-inline: auto;
+    margin-top: -1.5rem;
+    max-width: 850px;
     gap: 1.5rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
@@ -155,19 +172,18 @@ header {
     grid-area: Calculator;
   }
 
-
 }
 
 .card {
   background-color: white;
-  padding: 1rem 1.5rem 2rem 2rem;
+  padding: 1rem 1.5rem 2rem 1.5rem;
   display: grid;
   border-top-left-radius: .2rem;
   border-top-right-radius: .2rem;
   border-bottom-left-radius: .5rem;
   border-bottom-right-radius: .5rem;
   box-shadow: 0px 15px 25px rgb(225, 225, 225);
-  max-width: 30rem;
+  max-width: 40rem;
 }
 
 .cardOne {
@@ -184,6 +200,13 @@ header {
 
 .cardFour {
   border-top: solid 3px var(--box-four-top-border);
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 800px) {
+  .cardFour {
+    margin-bottom: 0rem;
+  }
 }
 
 .cardHeading {
@@ -192,6 +215,7 @@ header {
 
 .cardSubtext {
   padding-bottom: 2rem;
+  max-width: 35ch;
 }
 
 .cardContainer img {
