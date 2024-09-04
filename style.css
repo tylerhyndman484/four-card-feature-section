@@ -114,8 +114,6 @@ body {
 
 body {
   padding-inline: 2.5rem;
-  /* display: grid; */
-  /* place-items: center; */
 }
 
 header {
@@ -162,9 +160,9 @@ header {
 
 @media screen and (min-width: 800px) {
   .cardContainer {
-    /* margin-inline: auto; */
+    margin-inline: auto;
     margin-top: -1.5rem;
-    max-width: 1000px;
+    max-width: 1100px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
       "Supervisor Team Calculator"
@@ -194,8 +192,8 @@ header {
   background-color: white;
   padding: 1rem 1.5rem 2rem 1.5rem;
   display: grid;
-  border-top-left-radius: .2rem;
-  border-top-right-radius: .2rem;
+  border-top-left-radius: .4rem;
+  border-top-right-radius: .4rem;
   border-bottom-left-radius: .5rem;
   border-bottom-right-radius: .5rem;
   box-shadow: 0px 15px 25px rgb(225, 225, 225);
@@ -227,21 +225,26 @@ header {
 
 @media screen and (min-width: 800px) {
   .card {
-    min-width: 350px;
+    width: 100%;
     padding-left: 2rem;
     padding-top: 1.5rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
   }
 
-    .cardContainer {
-      margin-inline: 8.3rem;
  }
-}
+
 
 .cardHeading {
   padding-bottom: .3rem;
   padding-top: .3rem;
+}
+
+
+@media screen and (min-width: 800px) {
+  .cardHeading {
+    padding-bottom: .5rem;
+  }
 }
 
 .cardSubtext {
