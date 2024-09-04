@@ -66,25 +66,25 @@ body {
 
 .headingText {
     font-weight: var(--fw-light);
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .boldText {
     font-weight: var(--fw-bold);
-    font-size: 1.5rem;
+    font-size: 2rem;
     opacity: .7;
 }
 
   @media screen and (min-width: 800px) {
     .headingText , .boldText {
-      font-size: 2rem;
+      font-size: 2.25rem;
     }
   }
 
 .subText {
     font-weight: var(--fw-normal);
     opacity: .4;
-    font-size: .85rem;
+    line-height: 1.5rem;
 }
 
 .cardHeading {
@@ -96,6 +96,18 @@ body {
     opacity: .4;
     font-size: .7rem;
     line-height: 1.3rem;
+}
+
+@media screen and (min-width: 800px) {
+  .cardSubtext {
+    font-size: .8rem;
+    line-height: 1.4rem;
+  }
+
+  .cardHeading {
+    font-size: 1.2rem;
+  }
+
 }
 
 /* Layout Styling */
@@ -115,7 +127,7 @@ header {
 
 @media screen and (min-width: 800px) {
   header {
-    padding-bottom: 5rem;
+    padding-bottom: 5.5rem;
     margin-bottom: 0rem;
     margin-top: 5rem;
   }
@@ -132,7 +144,7 @@ header {
 .subText {
   text-align: center;
   /* padding-inline: .2rem; */
-  max-width: 30rem;
+  max-width: 55ch;
   margin: auto;
 }
 
@@ -144,16 +156,15 @@ header {
 
 .cardContainer {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.75rem;
   place-items: center;
 }
 
 @media screen and (min-width: 800px) {
   .cardContainer {
-    margin-inline: auto;
+    /* margin-inline: auto; */
     margin-top: -1.5rem;
     max-width: 1000px;
-    /* gap: 1.5rem; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
       "Supervisor Team Calculator"
@@ -192,19 +203,19 @@ header {
 }
 
 .cardOne {
-  border-top: solid 3px var(--box-one-top-border);
+  border-top: solid 5px var(--box-one-top-border);
 }
 
 .cardTwo {
-  border-top: solid 3px var(--box-two-top-border);
+  border-top: solid 5px var(--box-two-top-border);
 }
 
 .cardThree {
-  border-top: solid 3px var(--box-three-top-border);
+  border-top: solid 5px var(--box-three-top-border);
 }
 
 .cardFour {
-  border-top: solid 3px var(--box-four-top-border);
+  border-top: solid 5px var(--box-four-top-border);
   margin-bottom: 4rem;
 }
 
@@ -216,9 +227,16 @@ header {
 
 @media screen and (min-width: 800px) {
   .card {
-    min-width: 300px;
-    padding-bottom: 1.5rem;
+    min-width: 350px;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
   }
+
+    .cardContainer {
+      margin-inline: 8.3rem;
+ }
 }
 
 .cardHeading {
@@ -238,7 +256,7 @@ header {
 
 @media screen and (min-width: 800px) {
   .cardContainer img {
-    min-width: 3.2rem;
+    min-width: 4.5rem;
   }
 }
 
