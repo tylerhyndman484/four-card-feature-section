@@ -66,12 +66,12 @@ body {
 
 .headingText {
     font-weight: var(--fw-light);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .boldText {
     font-weight: var(--fw-bold);
-    font-size: 2rem;
+    font-size: 1.5rem;
     opacity: .7;
 }
 
@@ -105,7 +105,7 @@ body {
   }
 
   .cardHeading {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
 }
@@ -120,7 +120,8 @@ header {
   text-align: center;
   margin: auto;
   display: block;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  padding-top: 3.5rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -128,6 +129,7 @@ header {
     padding-bottom: 5.5rem;
     margin-bottom: 0rem;
     margin-top: 5rem;
+    padding-top: 0rem;
   }
 }
 
@@ -154,7 +156,7 @@ header {
 
 .cardContainer {
   display: grid;
-  gap: 1.75rem;
+  gap: 2rem;
   place-items: center;
 }
 
@@ -259,7 +261,7 @@ header {
 
 @media screen and (min-width: 800px) {
   .cardContainer img {
-    min-width: 4.5rem;
+    min-width: 4rem;
   }
 }
 
