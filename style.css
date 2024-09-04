@@ -113,6 +113,14 @@ header {
   margin-bottom: 5rem;
 }
 
+@media screen and (min-width: 800px) {
+  header {
+    padding-bottom: 5rem;
+    margin-bottom: 0rem;
+    margin-top: 5rem;
+  }
+}
+
 .headingText {
   margin-top: 2.75rem;
 }
@@ -123,7 +131,6 @@ header {
 
 .subText {
   text-align: center;
-  padding-bottom: 4rem;
   /* padding-inline: .2rem; */
   max-width: 30rem;
   margin: auto;
@@ -216,6 +223,7 @@ header {
 
 .cardHeading {
   padding-bottom: .3rem;
+  padding-top: .3rem;
 }
 
 .cardSubtext {
